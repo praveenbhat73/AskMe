@@ -16,16 +16,7 @@ gap: 2.5rem;
 align-items: center;
     
 }
-.topbar{
-    position:fixed;
-    height: 50px;
-    background-color: rgb(2, 2, 36);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    z-index: 100;
-}
+
 
 .img1{
     
@@ -77,4 +68,20 @@ align-items: center;
 .copy{
     color: white;
     font-weight: bold;
+}
+
+@media screen and (max-width:520px) {
+    .header{
+        flex-direction: column;
+    }
+    .img1{
+        object-fit: cover;
+        height: 550px;
+        width: 100%;
+    }
+
+    .head{
+        font-size: 26px;
+        margin: 2px;
+    }
 }
